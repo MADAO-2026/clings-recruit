@@ -18,8 +18,12 @@
 char *mystrcpy(char *dest, const char *src) {
     assert(dest != NULL && src != NULL);
 
-#error TODO: Implement mystrcpy using pointer idiom. Run "clings hint" for help.
-}
+    char *d = dest;
+    while ((*d++ = *src++) != '\0') {
+        /* do nothing */
+    }
+    return dest;
+}       
 
 int main(void) {
     char s1[256] = "";
